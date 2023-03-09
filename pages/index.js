@@ -1,6 +1,7 @@
 import { useSession } from "next-auth/react";
 import Head from "next/head";
 import React from "react";
+import Feed from "../components/Feed";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
 
@@ -16,6 +17,9 @@ function index() {
       </Head>
       <main className="relative max-w-[1400px] mx-auto">
         <Sidebar />
+        <div className="flex gap-6">
+          <Feed />
+        </div>
       </main>
     </div>
   );
