@@ -5,7 +5,7 @@ import Feed from "../components/Feed";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
 
-function index() {
+function Index() {
   const { data: session } = useSession();
   if (!session) {
     return <Login />;
